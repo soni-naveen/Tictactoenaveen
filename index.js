@@ -18,7 +18,7 @@ const rooms = {}; // Object to store rooms and their details
 
 // Function to generate a random room ID
 function generateRoomId() {
-  return Math.random().toString(36).slice(2, 10);
+  return Math.random().toString(36).slice(2, 7);
 }
 
 // Handle socket connection
