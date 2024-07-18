@@ -131,13 +131,17 @@ h2 {
     width: 300px;
     height: 300px;
   }
-  #inputbtns{
+  #inputbtns {
     justify-content: center;
   }
 }
 @media (max-width: 480px) {
+  body {
+    justify-content: center;
+  }
   #heading {
     font-size: 30px;
+    margin-bottom: 50px;
   }
   #board {
     width: 250px;
