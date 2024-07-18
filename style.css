@@ -1,0 +1,155 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#heading {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #2a6171;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./assets/backgroundimage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outerdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.innerdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#board {
+  border: 1px solid #2a6171;
+  width: 400px;
+  height: 400px;
+}
+#room-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#roomId {
+  font-size: 20px;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 3px;
+  border: none;
+}
+#roomId::placeholder {
+  color: lightblue;
+}
+#createRoom {
+  border: 1px solid #2a6171;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #2a6171;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+#joinRoom {
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  background-color: #07b2a4;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+#inputbtns {
+  display: flex;
+  gap: 30px;
+}
+#roomStatus {
+  color: black;
+}
+.square {
+  border: 2px solid #2a6171;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+h2 {
+  font-weight: 200;
+}
+.player {
+  color: rgb(0, 110, 255);
+  margin-right: 15px;
+}
+#leaderboard {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 30px;
+}
+@media (max-width: 900px) {
+  body {
+    justify-content: space-evenly;
+  }
+  #heading {
+    font-size: 40px;
+  }
+  .outerdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .innerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .headings {
+    gap: 10px;
+  }
+  .square {
+    font-size: 3rem;
+  }
+  #board {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  #heading {
+    font-size: 30px;
+  }
+  #board {
+    width: 250px;
+    height: 250px;
+  }
+  .square {
+    font-size: 2.5rem;
+  }
+  #leaderboard {
+    font-size: 25px;
+  }
+}
+@media (max-width: 340px) {
+  #heading {
+    font-size: 25px;
+  }
+}

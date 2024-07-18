@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 id="heading">Two Player Tic-Tac-Toe</h1>
+    <div class="outerdiv">
+      <div class="innerdiv">
+        <div id="room-container">
+          <input type="text" id="roomId" placeholder="Enter Room ID" />
+          <p id="roomStatus"></p>
+          <div id="inputbtns">
+            <button id="joinRoom">Join Room</button>
+            <button id="createRoom">Create Room</button>
+          </div>
+        </div>
+        <div class="headings">
+          <div id="leaderboard">X wins: 0,&nbsp; O wins: 0</div>
+        </div>
+      </div>
+      <div id="board"></div>
+    </div>
+  </body>
+</html>
