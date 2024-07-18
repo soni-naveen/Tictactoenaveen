@@ -101,7 +101,6 @@ h2 {
 }
 #leaderboard {
   margin-top: 10px;
-  font-weight: lighter;
   font-size: 30px;
 }
 @media (max-width: 900px) {
@@ -132,6 +131,9 @@ h2 {
     width: 300px;
     height: 300px;
   }
+  #inputbtns{
+    justify-content: center;
+  }
 }
 @media (max-width: 480px) {
   #heading {
@@ -148,7 +150,7 @@ h2 {
     font-size: 25px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 350px) {
   #heading {
     font-size: 25px;
   }
